@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-const Main_DB_ID = "37f71423963f45718def375d4d58e45d";
+const USAGE_DB_ID = "6c067af5f31c4efb8e1e017509bf9c0a";
+const MATERIAL_DB_ID = "1838d04e81b34e95b035999ee73e60d9";
 
 const CATEGORY_STYLE = {
   석재: { bg: "#e8f4f0", text: "#2a7a5f", accent: "#3aaa80" },
