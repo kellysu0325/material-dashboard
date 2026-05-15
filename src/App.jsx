@@ -1,14 +1,7 @@
 import { useState, useEffect } from "react";
 
-const NOTION_TOKEN = import.meta.env.VITE_NOTION_TOKEN;
 const USAGE_DB_ID = "6c067af5f31c4efb8e1e017509bf9c0a";
 const MATERIAL_DB_ID = "1838d04e81b34e95b035999ee73e60d9";
-
-const HEADERS = {
-  Authorization: `Bearer ${NOTION_TOKEN}`,
-  "Notion-Version": "2022-06-28",
-  "Content-Type": "application/json",
-};
 
 const CATEGORY_STYLE = {
   석재: { bg: "#e8f4f0", text: "#2a7a5f", accent: "#3aaa80" },
