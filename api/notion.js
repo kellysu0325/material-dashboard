@@ -27,9 +27,11 @@ export default async function handler(req, res) {
     });
 
     const data = await response.json();
-    if (!response.ok) return res.status(response.status).json(data);
+    if (!response.ok) {
+      return res.status(response.status).json({ message: data.message, code: data.code });
+    }
 
-    results.push(...data.results);
+    results.push(...(data.results || []));
     cursor = data.has_more ? data.next_cursor : null;
   } while (cursor);
 
